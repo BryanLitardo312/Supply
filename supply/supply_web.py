@@ -5,6 +5,6 @@ import reflex as rx
 
 app = rx.App(
     theme=rx.theme(
-        appearance="dark", radius="large", accent_color="grass"
+        appearance="dark", accent_color="blue"
     ),
 )
