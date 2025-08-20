@@ -5,5 +5,6 @@ from ..Componentes.sidebar import sidebar
 def recibo() -> rx.Component:
     return rx.hstack(
         sidebar(),
-        rx.text('Hola mundo!')
+        rx.text('Hola mundo!'),
+        bg="#0D0D0D"
     )
