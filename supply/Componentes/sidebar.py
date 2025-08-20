@@ -18,12 +18,14 @@ def sidebar() -> rx.Component:
     return rx.el.aside(
         rx.el.div(
             rx.el.div(
-                rx.icon(
-                    tag="hexagon",
-                    class_name="size-8 text-cyan-400 mr-3",
+                rx.image(
+                    src="/primax_logo.png",
+                    width="3rem",
+                    height="auto",
+                    #alt="Descripción de la imagen",
                 ),
                 rx.el.h1(
-                    "NEXUS OS",
+                    "Primax Ecuador",
                     class_name="text-xl font-bold text-gray-100 tracking-wider",
                 ),
                 rx.el.button(
@@ -47,7 +49,7 @@ def sidebar() -> rx.Component:
         ),
         class_name=rx.cond(
             GeneralState.mobile_sidebar_open,
-            "fixed inset-y-0 left-0 z-50 w-64 bg-gray-900 text-gray-300 flex flex-col border-r border-gray-700/50 transform transition-transform duration-300 ease-in-out md:translate-x-0",
-            "fixed inset-y-0 left-0 z-40 w-64 bg-gray-900 text-gray-300 flex-col border-r border-gray-700/50 transform -translate-x-full transition-transform duration-300 ease-in-out md:flex md:translate-x-0 md:static md:z-auto",
+            "fixed inset-y-0 left-0 z-50 w-64 text-gray-300 flex flex-col border-r border-gray-700/50 transform transition-transform duration-300 ease-in-out md:translate-x-0 [background-color:#0D0D0D] h-screen",
+            "fixed inset-y-0 left-0 z-40 w-64 text-gray-300 flex-col border-r border-gray-700/50 transform -translate-x-full transition-transform duration-300 ease-in-out md:flex md:translate-x-0 md:static md:z-auto [background-color:#0D0D0D] h-screen",
         ),
     )
